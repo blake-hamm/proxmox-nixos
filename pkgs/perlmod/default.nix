@@ -11,7 +11,7 @@ rustPlatform.buildRustPackage rec {
   version = "0.2.0-3";
 
   src = fetchgit {
-    url = "https://git.proxmox.com/git/perlmod.git";
+    url = "git://git.proxmox.com/git/perlmod.git";
     rev = "88d7d3b742057c57a78fa68fd461b4d4bb8a0fce";
     hash = "sha256-9y6Z6IaIHPgbraT7NGUUsEB/PMWybgRt876sUGHUGjg=";
   };
