@@ -115,7 +115,7 @@ def main():
                         print(f"Patching Cargo dependency '{dep}' to use Git.")
                     if dep == 'perlmod':
                         run_command(
-                            f'toml set Cargo.toml dependencies.{dep}.git https://git.proxmox.com/git/perlmod.git > Cargo.toml.tmp && mv Cargo.toml.tmp Cargo.toml')
+                            f'toml set Cargo.toml dependencies.{dep}.git git://git.proxmox.com/git/perlmod.git > Cargo.toml.tmp && mv Cargo.toml.tmp Cargo.toml')
                     elif dep == 'proxmox-resource-scheduling':
                         run_command(
                             f'toml set Cargo.toml dependencies.{dep}.git https://git.proxmox.com/git/proxmox-resource-scheduling.git > Cargo.toml.tmp && mv Cargo.toml.tmp Cargo.toml')
